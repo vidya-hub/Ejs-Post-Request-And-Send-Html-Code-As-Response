@@ -1,0 +1,84 @@
+<!doctype html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    <title>PDF 1</title>
+    <style type="text/css" media="print">
+        @page {
+            size: auto;
+            margin: 5mm;
+
+        }
+        html{zoom: 0.7;}
+        /* uncomment for check A4 size */
+        @page {
+            size: 7in 9.25in;
+            margin: 27mm 16mm 27mm 16mm;
+        } 
+
+        @media print {
+            .footer,
+            #non-printable {
+                display: none !important;
+            }
+            #printable {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body style="padding:0px; margin:0px; box-sizing: border-box;">
+    <div id="exportContent">
+    <div style="margin:15px;padding:0px;font-family: PT Sans, sans-serif;">
+        <div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <div style="border-bottom: 2px solid #000; ">
+                                                    <p
+                                                        style="text-align: center;font-size: 24px;border-bottom: 1px solid #000;margin: 0;margin-bottom: 3px;padding: 25px 0;">
+                                                        <%= firstName %> <%= lastName %>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                        <tr style="margin-top: 5px;">
+                                            <td>
+                                                <ul style="text-align: center; list-style-position: inside;">
+                                                    <li style="font-size: 16px;  display:inline;">
+                                                        1 <%=address %>,</li>
+                                                    <li style="font-size: 16px;  display:inline;">
+                                                        2 <%=phoneNo %>,</li>
+                                                    <li style="font-size: 16px;  display:inline;">
+                                                        3 <%=email %></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

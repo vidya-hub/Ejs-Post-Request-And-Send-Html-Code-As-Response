@@ -1,0 +1,68 @@
+<!doctype html>
+<html moznomarginboxes mozdisallowselectionprint>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>PDF 1</title>
+    <style type="text/css" media="print">
+        @page {
+            size: auto;
+            margin: 5mm;
+
+        }
+
+        html {
+            zoom: 0.7;
+        }
+
+        /* uncomment for check A4 size */
+        @page {
+            size: 7in 9.25in;
+            margin: 27mm 16mm 27mm 16mm;
+        }
+
+        @media print {
+
+            .footer,
+            #non-printable {
+                display: none !important;
+            }
+
+            #printable {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body style="padding:0px; margin:0px; box-sizing: border-box;">
+    <div style="margin:15px;padding:0px;font-family: PT Sans, sans-serif;">
+        <div>
+            <table width="100%">
+                <tr style="border-bottom: 3px solid #8a2020;">
+                    <td class=" font-weight-bold" style="width: 50%;">
+                        <%= firstName %> <%= lastName %>
+                    </td>
+                    <td class="text-right" width="50%">
+                        <% if (email && email.length>0) { %>
+                        Email: <%= email %><br />
+                        <%}%>
+                        <% if (phoneNo && phoneNo.length>0) { %>
+                        Phone: <%= phoneNo %><br />
+                        <%}%>
+                        <% if (address && address.length>0) { %>
+                        Address: <%= address %><br />
+                        <%}%>
+                    </td>
+                </tr>
+               
+                
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

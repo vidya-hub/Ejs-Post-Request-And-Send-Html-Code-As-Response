@@ -1,0 +1,66 @@
+<!doctype html>
+<html moznomarginboxes mozdisallowselectionprint>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    <title>PDF 1</title>
+    <style type="text/css" media="print">
+        @page {
+            size: auto;
+            margin: 5mm;
+        }
+        html{zoom: 0.7;}
+
+        /* uncomment for check A4 size */
+        @page {
+            size: 7in 9.25in;
+            margin: 27mm 16mm 27mm 16mm;
+        } 
+
+        @media print {
+            .footer,
+            #non-printable {
+                display: none !important;
+            }
+            #printable {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body style="padding:0px; margin:0px; box-sizing: border-box;">
+    <div style="  margin:0px 0px; padding:0px;font-family: PT Sans, sans-serif;">
+        <div>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <div style="border-bottom: 2px solid #000; ">
+                                                    <p
+                                                        style="text-align: center;font-size: 24px;margin: 0;padding: 25px 0; background: #1d4871; color:#9b9b9b; text-transform: uppercase; font-weight: 700;">
+                                                        <%= firstName %> <%= lastName %></p>
+                                                    <p
+                                                        style="text-align: center;font-size: 18px;border-bottom: 1px solid #000;margin: 0;margin-bottom: 3px;padding: 10px 0; background: #d2dae3; color:#727597; font-weight: normal;">
+                                                        <%=phoneNo %>//<%=email %> //<%=address %></p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

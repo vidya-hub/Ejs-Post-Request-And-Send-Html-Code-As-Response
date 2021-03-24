@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        2nd
+    </title>
+    <link rel="stylesheet" type="text/css" href="http://165.227.248.244:3001/poppins.css">
+    <link rel="stylesheet" type="text/css" href="http://165.227.248.244:3001/2.css">
+</head>
+<link rel="stylesheet" type="text/css" href="http://165.227.248.244:3001/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <table class="top">
+            <tr>
+                <td class="main_div_name ">
+                    <div>
+                        <div class="first_name"><%= firstName %></div>
+                        <div class="last_name"><%= lastName %></div>
+                    </div>
+                </td>
+                <!-- <td class="main_div_details">
+    			<div class="position">BUSINESS ANALYST</div>
+    			<div class="job_title">job title</div>
+    		</td> -->
+            </tr>
+        </table>
+				<th class="right" style="border-top: 0; border-left: 0;">
+					<div class="r_1">
+						<div class="hdng_1">Personal Details</div>
+						<div class="details_main">
+
+							<div class="details">
+								<i class="icon fas fa-birthday-cake"></i><%= birthDate %>
+							</div>
+							<div class="details">
+                                <i class="icon fas fa-phone-alt"></i>
+                                <% if (phoneNo && phoneNo.length>0) { %>
+                                    <%= phoneNo %><br />
+                                    <%}%>
+							</div>
+							<div class="details">
+								<i class="icon fas fa-envelope"></i><% if (email && email.length>0) { %>
+                                    <%= email %><br />
+                                    <%}%>
+							</div>
+							<div class="details">
+								<i class="icon fas fa-map-marker-alt"></i> <% if (address && address.length>0) { %>
+                                    <%= address %><br />
+                                    <%}%>
+							</div>
+						</div>	
+					</div>
+				</th> 
+			</tr>
+		</table>	
+	</div>
+</body>
+</html>

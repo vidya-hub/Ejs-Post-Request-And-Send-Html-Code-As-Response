@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        1st
+    </title>
+    <link rel="stylesheet" type="text/css" href="http://165.227.248.244:3001/poppins.css">
+    <link rel="stylesheet" type="text/css" href="http://165.227.248.244:3001/1.css">
+</head>
+<link rel="stylesheet" type="text/css" href="http://165.227.248.244:3001/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div style="border:3px solid #000;">
+            <div class="top_main">
+                <div class="top_sub">
+                    <div class="name">
+                        <%= firstName %> <%= lastName %>
+                    </div>
+                    <div class="post">
+                        <!-- BUSINESS ANALYSt -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="main_table_th" style="width: 100%; border-spacing: 0; ">
+            <tr>
+                <th class="left" style="border-top: 0;">
+                    <div class="l_1">
+
+                        <div class="details_main">
+                            <div class="hdng_1">Personal Details</div>
+                            <div class="dsgn"></div>
+                            <div class="details_main">
+
+                                <div class="details">
+                                    <i class="icon fas fa-birthday-cake"></i> <%= birthDate %>
+                                </div>
+                                <div class="details">
+                                    <i class="icon fas fa-phone-alt"></i><% if (phoneNo && phoneNo.length>0) { %>
+                                    <%= phoneNo %><br />
+                                    <%}%>
+							</div>
+							<div class="details">
+								<i class="icon fas fa-envelope"></i> <% if (email && email.length>0) { %>
+                                    <%= email %><br />
+                                    <%}%>
+							</div>
+							<div class="details">
+                                <i class="icon fas fa-map-marker-alt"></i>
+                                <% if (address && address.length>0) { %>
+                                    <%= address %><br />
+                                    <%}%>
+							</div>
+						</div>	
+						</div>	
+					</div>
+					
+    </th>
+    </tr>
+    </table>
+    </div>
+</body>
+
+</html>
